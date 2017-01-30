@@ -1,0 +1,25 @@
+CYK Algorithm is implement in CYK.java class. Here are the instructions to execute it.
+
+- Usage: java Cyk grammar_file some_string
+- You can also provide the details in main() function.
+- Grammer is to be provided in grammar_file. Check grammer file for reference.
+
+
+In the given grammer,  NP -> Det N PP does not fits with CNF.
+
+Here is the output of CYK algorithm for the given sentence:
+I shot an elephant in my pajamas
+
+**************************************************************************
+Ignoring as its not valid : NP -> Det N PP
+
+  [NP] [V] [Det] [N] [P] [Det] [N] 
+    [-] [-] [NP] [-] [-] [NP] 
+      [-] [VP] [-] [-] [PP] 
+        [S] [-] [-] [-] 
+          [-] [-] [-] 
+            [-] [VP] 
+              [S] 
+true : String matches
+
+***************************************************************************
